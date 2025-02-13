@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mobile Screen</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 512px;
+            margin: 0 auto;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+
+        .ancher {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .parent_div { <div
+            border: 2px solid green;
+            height: 150px;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding: 10px;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+
+        .child_div {
+            border: 2px solid red;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 512px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .parent_div {
+                flex-wrap: nowrap;
+                justify-content: flex-start; max-width: 100%;}
+                .parent_div div:nth-child(1) {background-image:Aloo-Gobi/moblie-image1.png}
+                 .parent_div div:nth-child(2){background-image:Black-Peper-Tofu/moblie-image1.png}
+                  .parent_div div:nth-child(3){background-image:cauliflower mac and cheese/moblie-image1.png}
+                   .parent_div div:nth-child(4){background-image:collard greens pesto chickpea salad sandwiche/moblie-image1.png}
+                    .parent_div div:nth-child(5){background-image:Aloo-Gobi/moblie-image1.png}
+                     .parent_div div:nth-child(6){background-image:Black-Peper-Tofu/moblie-image1.png}
+                      .parent_div div:nth-child(7){background-image:cauliflower mac and cheese/moblie-image1.png}
+                       .parent_div div:nth-child(8){background-image:collard greens pesto chickpea salad sandwiche/moblie-image1.png}
+                        .parent_div div:nth-child(9){background-image:Aloo-Gobi/moblie-image1.png}
+                         .parent_div div:nth-child(10){background-image:Black-Peper-Tofu/moblie-image1.png}
+                          .parent_div div:nth-child(11){background-image:cauliflower mac and cheese/moblie-image1.png}
+                           .parent_div div:nth-child(12){background-image:collard greens pesto chickpea salad sandwiche/moblie-image1.png}
+                            .parent_div div:nth-child(13){background-image:Aloo-Gobi/moblie-image1.png}
+                             .parent_div div:nth-child(14){background-image:Black-Peper-Tofu/moblie-image1.png}
+                              .parent_div div:nth-child(15){background-image:cauliflower mac and cheese/moblie-image1.png}
+                               .parent_div div:nth-child(16){background-image:collard greens pesto chickpea salad sandwiche/moblie-image1.png}
+                                .parent_div div:nth-child(17){background-image:Aloo-Gobi/moblie-image1.png}
+                                 .parent_div div:nth-child(18){background-image:Black-Peper-Tofu/moblie-image1.png}
+                                  .parent_div div:nth-child(19){background-image:cauliflower mac and cheese/moblie-image1.png}
+                                   .parent_div div:nth-child(20){background-image:collard greens pesto chickpea salad sandwiche/moblie-image1.png}
+                            
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main_content">
+        <nav>
+            <a href="index.html" class="ancher">Home</a>
+            <a href="about.html" class="ancher">About</a>
+            <a href="contact.html" class="ancher">Contact</a>
+            <a href="blog.html" class="ancher">Blog</a>
+        </nav>
+
+        <h2>Paragraph One</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, accusantium sed aliquid sint officia voluptas sequi labore maxime aperiam voluptatibus.
+        </p>
+
+        <h2>Paragraph Two</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, accusantium sed aliquid sint officia voluptas sequi labore maxime aperiam voluptatibus.
+        </p>
+
+        <div class="parent_div">
+            <div class="child_div">Block One</div>
+            <div class="child_div">Block Two</div>
+            <div class="child_div">Block Three</div>
+            <div class="child_div">Block Four</div>
+            <div class="child_div">Block Five</div>
+        </div>
+    </main>
+
+</body>
+</html>
